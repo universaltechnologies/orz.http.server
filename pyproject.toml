@@ -1,0 +1,20 @@
+[project]
+name = "orz.http.server"
+version = "0.1.0"
+description = "A minimal HTTP server with Cross-Origin isolation headers for high-resolution timers"
+readme = "README.md"
+authors = [
+    { name = "agent", email = "agent@orz.ing" }
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+"orz.http.server" = "orz.http.server:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
