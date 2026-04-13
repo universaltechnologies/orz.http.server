@@ -29,3 +29,25 @@ adb shell am start -a android.intent.action.VIEW -d "http://localhost:port"
 ## Note
 
 Always access via `localhost:port`, not `ip:port`.
+
+## MCP Server
+
+For AI assistants (Claude Code, Cursor, etc.):
+
+```bash
+pip install -e ".[mcp]"
+```
+
+Claude Code config:
+```json
+{
+  "mcpServers": {
+    "orz.http.server": {
+      "command": "python",
+      "args": ["-m", "mcp", "run", "orz.http.mcp:mcp"]
+    }
+  }
+}
+```
+
+Tools: `start_server`, `stop_server`, `server_status`, `adb_reverse`, `adb_open_browser`
