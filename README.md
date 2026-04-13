@@ -1,6 +1,10 @@
 # orz.http.server
 
+[![test](https://github.com/universaltechnologies/orz.http.server/actions/workflows/test.yml/badge.svg)](https://github.com/universaltechnologies/orz.http.server/actions/workflows/test.yml)
+
 A minimal HTTP server that sends Cross-Origin isolation headers, enabling high-resolution timers (`performance.now()` at microsecond precision) in the browser. Useful for Unity Profiler and other tools that depend on accurate timing.
+
+Tested on Linux / Windows / macOS with Python 3.8+. MCP tools require Python 3.10+.
 
 ## Install
 
