@@ -29,9 +29,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 return mime
         return super().guess_type(path)
 
-    def log_message(self, format, *args):
-        pass
-
 
 def main():
     parser = argparse.ArgumentParser()
