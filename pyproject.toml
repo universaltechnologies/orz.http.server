@@ -1,6 +1,6 @@
 [project]
 name = "orz.http.server"
-version = "0.1.0"
+version = "0.1.1"
 description = "A minimal HTTP server with Cross-Origin isolation headers for high-resolution timers"
 readme = "README.md"
 authors = [
