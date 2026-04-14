@@ -55,3 +55,21 @@ Claude Code config:
 ```
 
 Tools: `start_server`, `stop_server`, `server_status`, `adb_reverse`, `adb_open_browser`
+
+## FAQ
+
+**Can I achieve this without code using the built-in `http.server`?**
+
+No. The built-in `http.server` has no option to add custom headers or MIME type mappings.
+
+**Does the MIME type mapping introduce security risks?**
+
+No. It only tells the browser the correct file type. Correct MIME types actually help browser security policies work properly.
+
+**Does enabling high-resolution timers expose me to attacks?**
+
+No. The precision only applies to your own pages. COOP/COEP headers are opt-in — you're trusting your own pages, not opening access to others.
+
+**Does this server work as a file server?**
+
+Yes, it inherits `http.server` and serves directory contents. By default it serves the current directory, so use `-d path` to avoid exposing unwanted files.
